@@ -3,7 +3,7 @@
 theme: default
 
 layout: image
-image: '/assets/ollie_river.jpeg'
+image: '/ollie_river.jpeg'
 ---
 
 
@@ -149,7 +149,7 @@ Our Agenda tonight is a fun. I want to explain a few things before we get to cod
 
 <style>
 h1 {
-  background-color: #05386b;
+  background-color:  #05386b;
   background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
   background-size: 100%;
   -webkit-background-clip: text;
@@ -185,7 +185,7 @@ I started looking around for a more flexible career path and have always gotten 
 
 <style>
 h1 {
-  background-color: #2B90B6;
+  background-color:  #05386b;
   background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
   background-size: 100%;
   -webkit-background-clip: text;
@@ -224,7 +224,7 @@ Learn more: https://sli.dev/guide/syntax#embedded-styles
 
 <style>
 h1 {
-  background-color: #2B90B6;
+  /* background-color:  #05386b; */
   background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
   background-size: 100%;
   -webkit-background-clip: text;
@@ -246,7 +246,8 @@ image: https://www.digitalsilk.com/wp-content/uploads/2020/09/headless-content-m
 
 # What is HEADLESS CMS??!!
 
-Headless CMS is a content management system (CMS) without a pre-built front-end presentation layer or templating system; instead, it provides a content repository and an API** for managing the content. 
+<p>Headless CMS is a content management system (CMS) without a pre-built front-end presentation layer or templating system; instead, it provides a content repository and an API** for managing the content.</p>
+
 <!-- Basically, plugin and play with different sources, CDN, databases and much more. -->
 
 2 main types of Headless CMS
@@ -275,8 +276,11 @@ more: <br/>
 </div>
 
 <style>
+  .slidev-layout h1 + p {
+   opacity: 1;
+  }
 h1 {
-  background-color: #2B90B6;
+  background-color:  #05386b;
   background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
   background-size: 100%;
   -webkit-background-clip: text;
