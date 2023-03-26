@@ -2,9 +2,11 @@
 # try also 'default' to start simple
 theme: default
 
-layout: intro
+layout: image
 image: 'ollie_river.jpeg'
 ---
+
+
 
 <div class="ml-4 absolute top-10">
   <span class="font-700">
@@ -12,12 +14,21 @@ image: 'ollie_river.jpeg'
   </span>
 </div>
 
-<div class="absolute bottom-10 ml-4">
+<div class="bg absolute bottom-10 ml-4">
   <h1>Why I use Headless CMS</h1>
-  <p>Presentation/demo of how to use CMS</p>
+  <p >Presentation/demo of how to use CMS</p>
 </div>
 
+<style>
+  .bg {
+    background-color:  #05386b;
+    padding: 5px;
 
+  }
+   p {
+    color: white !important;
+  }
+</style>
  
 
 ---
@@ -138,7 +149,7 @@ Our Agenda tonight is a fun. I want to explain a few things before we get to cod
 
 <style>
 h1 {
-  background-color: #2B90B6;
+  background-color: #05386b;
   background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
   background-size: 100%;
   -webkit-background-clip: text;
@@ -340,17 +351,18 @@ As an API driven CMS this one is well liked and has many tutorials. The docs are
 
 </div>
 </div>
+<br/>
 And of course I use Netlify to host for a few reasons. Ease, security, cost 💰. The main one is the free forms that come with all plans.
 <br/>
 <br/>
 
 <br/>
 <br/>
-The best part of <strong>Jamstack</strong> tech is they are pretty friendly and can work in many different combos!
+The best part of <strong>Jamstack</strong> tech is they are pretty friendly and can work in many different combonations!
+
 ---
-
-## transition: fade
-
+transition: fade
+---
 # Demo Time 
 
 # Steps TBD
@@ -367,6 +379,9 @@ The best part of <strong>Jamstack</strong> tech is they are pretty friendly and 
 ```
 
 ---
+transition: slide-down
+class: text-center
+---
 
-Thank you!
+Thank you!<br/>
 Be sure to check out Strapi and TinaCMS for some variety!
