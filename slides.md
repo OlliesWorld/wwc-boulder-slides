@@ -1,57 +1,30 @@
 ---
 # try also 'default' to start simple
-theme: seriph
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
-background: https://source.unsplash.com/collection/94734566/1920x1080
-# apply any windi css classes to the current slide
-class: 'text-center'
-# https://sli.dev/custom/highlighters.html
-highlighter: shiki
-# show line numbers in code blocks
-lineNumbers: false
-# some information about the slides, markdown enabled
-info: |
-  ## WWC Presentation
-  Presentation slides for developers.
+theme: default
 
-# persist drawings in exports and build
-drawings:
-  persist: false
-# page transition
-transition: slide-left
-# use UnoCSS
-css: unocss
+layout: intro
+image: 'ollie_river.jpeg'
 ---
 
-# Welcome to Headless CMS
-
-Presentation about using headless CMS for developers
-
-<div class="pt-12">
-  <span  class="px-2 py-1 rounded cursor-pointer" hover="bg-red bg-opacity-10">
-    by Roni <uim-rocket class="inline"/>
+<div class="ml-4 absolute top-10">
+  <span class="font-700">
+    by Roni 💙
   </span>
 </div>
 
-<!-- <div class="abs-br m-6 flex gap-2">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub"
-    class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon-logo-github />
-  </a>
-</div> -->
+<div class="absolute bottom-10 ml-4">
+  <h1>Why I use Headless CMS</h1>
+  <p>Presentation/demo of how to use CMS</p>
+</div>
 
-<!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
--->
+
+ 
 
 ---
 transition: fade-out
 layout: two-cols
 ---
+
 <template v-slot:default>
 
 # Tonights Agenda!
@@ -67,7 +40,7 @@ layout: two-cols
       class="absolute top-0 left-0 right-0 bottom-0"
       src="https://sli.dev/logo-triangle.png"
     />
-  </div>
+ 
 
   <div
     class="text-3xl absolute top-14 left-40 text-[#2B90B6] -z-1"
@@ -76,6 +49,7 @@ layout: two-cols
     :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
     My intro
   </div>
+   </div>
 </div>
 <div class="w-72 relative mt-6">
   <div class="relative w-40 h-40">
@@ -87,7 +61,7 @@ layout: two-cols
       class="absolute top-0 left-0 right-0 bottom-0"
       src="https://sli.dev/logo-triangle.png"
     />
-  </div>
+ 
 
   <div
     class="text-3xl absolute top-14 left-40 text-[#2B90B6] -z-1"
@@ -96,6 +70,7 @@ layout: two-cols
     :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
     What is CMS?!
   </div>
+   </div>
 </div>
 </template>
 <template v-slot:right>
@@ -109,8 +84,7 @@ layout: two-cols
       class="absolute top-0 left-0 right-0 bottom-0"
       src="https://sli.dev/logo-triangle.png"
     />
-  </div>
-
+ 
   <div
     class="text-3xl absolute top-14 left-40 text-[#2B90B6] -z-1"
     v-click
@@ -118,6 +92,8 @@ layout: two-cols
     :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
     Headless CMS?!!?
   </div>
+   </div>
+
 </div>
 <div class="w-72 relative mt-6">
   <div class="relative w-40 h-40">
@@ -175,14 +151,39 @@ h1 {
 <!--
 Here is another comment.
 -->
+
 ---
 transition: fade-out
 ---
+
 # About Me
-I am a self-taught frontend developer. I am not from a traditional background as alot of us say. I worked with horses for the first few adult years. 
-Currently working at Postman as a Software Engineer. Working with the marketing and open technologies teams to build features, component and pages.
+
+<div grid='~ cols-2 gap-4'>
+<div>
+I am a self-taught frontend developer. I worked with horses for the first few adult years. 2019 I started my journey into tech with online course, after I was hooked I went down the rabbit hole of tutorials. Currently working at Postman as a Software Engineer. Working with the marketing and open technologies teams to build features, component and pages.<br/>
+
+<img src="/smile.png" class="contain w-1/2" alt="Roni and Ollie, dog, smiling wide">
+</div>
+<div>
+I live in Fort Collins, Colorado with my pup Ollie! We love to hike, bike and paddle board. And also hang out on patios at our favorite breweries so Ollie can meet all the people! He is also the best at helping me debug!!🐶
+<img src="/ollielikes.jpeg" class="cover w-1/2 " alt="Ollie,dog, looking at camera with a heart icon over his head">
+</div>
+</div>
 <!--I needed to find something else,  when your body doesn't recover as fast and you are always working pay check to pay check. What made me jump into tech was after a few years working in customer service jobs but never able to give the customer the service I felt they needed through the ecommerce side of things. 
 I started looking around for a more flexible career path and have always gotten along with computers and curious about websites. Found a tiny bootcamp/workshop course and found I loved frontend. And here we are.-->
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
 ---
 transition: fade-out
 ---
@@ -229,13 +230,12 @@ Here is another comment.
 ---
 transition: slide-up
 layout: image-right
-image: https://cdn.sanity.io/images/3do82whm/next/665ee622d8843e9bd55dc8035ea21c717f410326-3388x2946.png?w=1280&h=1113&fit=clip&auto=format
+image: https://www.digitalsilk.com/wp-content/uploads/2020/09/headless-content-menagament-system.jpg
 ---
 
 # What is HEADLESS CMS??!!
-definition:
-Headless CMSes, unlike their monolithic counterparts, can deliver content to all sorts of “heads,” like mobile apps, chatbots, voice apps–anywhere content can be delivered.
 
+Headless CMS is a content management system (CMS) without a pre-built front-end presentation layer or templating system; instead, it provides a content repository and an API** for managing the content. 
 <!-- Basically, plugin and play with different sources, CDN, databases and much more. -->
 
 2 main types of Headless CMS
@@ -247,14 +247,17 @@ According to Jamstack.org
 
 <div grid="~ cols-2 gap-4">
 
-resources: <br/>
+referenced resources: <br/>
+[Wiki](https://en.wikipedia.org/wiki/Headless_content_management_system)<br/>
+[image source](https://www.digitalsilk.com/digital-trends/headless-cms/)<br/>
 [Netlify article](https://www.netlify.com/blog/complete-guide-to-headless-cms/) <br/>
 [Sanity Blog](https://www.sanity.io/headless-cms)<br/>
+
+
+
+more: <br/>
 [A very long list of Headless CMS](https://jamstack.org/headless-cms/)<br/>
-[The Headless Club](https://theheadlessclub.com/)
-
-
-video resource: <br/>
+[The Headless Club](https://theheadlessclub.com/)<br/>
 [Sanity Video](https://www.netlify.com/blog/complete-guide-to-headless-cms/)
 
 
@@ -275,14 +278,15 @@ a {
 }
 </style>
 
+
 ---
 transition: fade-out
 layout: two-cols
 ---
+
 <div class="w-3xl">
  
 # Why go Headless?!
-
 
 <div grid="~ cols-3 gap-12">
 <div class="w-md">
@@ -291,16 +295,18 @@ layout: two-cols
 
 - 📝 **Productivity** - Editors can ship more frequently
 - 📈 **Scalable** - Switch other pieces as needed
-- 🧑‍💻 **Developer Friendly** - use workflows they prefer without impacting editors 
+- 🧑‍💻 **Developer Friendly** - use workflows they prefer without impacting editors
 - 🎢 **Performance** - pre-renders pages and SEO out of the box
 - 🔐 **Secure** - smaller area to attack, when seperate from the rest
 </div>
 <div></div>
  <div class="w-60">
- 
+
 ## Use Cases, a few
+
 - Websites/Web apps
 - E-commerce sites
+- chatbots
 - Mobile Apps
 - Products & services
 - Digital signage 👀Burger King(Sanity)
@@ -322,7 +328,6 @@ My favorite frontend framework. For me it is easy to understand and work relativ
 <br/>
 <img src="https://dka575ofm4ao0.cloudfront.net/pages-transactional_logos/retina/90147/Gatsby_Logo.png">
 
-
 </div>
 <div>
 Sanity is a great way to learn CMS and they have nice sweatshirts! I chose for its price point of 3 free users. 
@@ -335,33 +340,33 @@ As an API driven CMS this one is well liked and has many tutorials. The docs are
 
 </div>
 </div>
+And of course I use Netlify to host for a few reasons. Ease, security, cost 💰. The main one is the free forms that come with all plans.
+<br/>
+<br/>
 
-
-
+<br/>
+<br/>
+The best part of <strong>Jamstack</strong> tech is they are pretty friendly and can work in many different combos!
 ---
-transition: fade
----
 
-# Demo Time
+## transition: fade
 
-1. Login/Create Sanity account. 
+# Demo Time 
+
+# Steps TBD
+
+1. Login/Create Sanity account.
 2. Create project - Name it My Plants
-3.
-
+3. get project ID
 4. [Clone this repo](https://motion.vueuse.org/).
 5. npm install
 6. Open in IDE
 
 ```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }">
-  Slidev
-</div>
+<div v-motion :initial="{ x: -80 }" :enter="{ x: 0 }">Slidev</div>
 ```
 
-
 ---
+
 Thank you!
 Be sure to check out Strapi and TinaCMS for some variety!
