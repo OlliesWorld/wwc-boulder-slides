@@ -3,7 +3,7 @@
 theme: default
 
 layout: image
-image: 'ollie_river.jpeg'
+image: '/assets/ollie_river.jpeg'
 ---
 
 
@@ -173,11 +173,11 @@ transition: fade-out
 <div>
 I am a self-taught frontend developer. I worked with horses for the first few adult years. 2019 I started my journey into tech with online course, after I was hooked I went down the rabbit hole of tutorials. Currently working at Postman as a Software Engineer. Working with the marketing and open technologies teams to build features, component and pages.<br/>
 
-<img src="/smile.png" class="contain w-1/2" alt="Roni and Ollie, dog, smiling wide">
+<img src="/assets/smile.png" class="contain w-1/2" alt="Roni and Ollie, dog, smiling wide">
 </div>
 <div>
 I live in Fort Collins, Colorado with my pup Ollie! We love to hike, bike and paddle board. And also hang out on patios at our favorite breweries so Ollie can meet all the people! He is also the best at helping me debug!!🐶
-<img src="/ollielikes.jpeg" class="cover w-1/2 " alt="Ollie,dog, looking at camera with a heart icon over his head">
+<img src="/assets/ollielikes.jpeg" class="cover w-1/2 " alt="Ollie,dog, looking at camera with a heart icon over his head">
 </div>
 </div>
 <!--I needed to find something else,  when your body doesn't recover as fast and you are always working pay check to pay check. What made me jump into tech was after a few years working in customer service jobs but never able to give the customer the service I felt they needed through the ecommerce side of things. 
