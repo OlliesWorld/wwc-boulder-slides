@@ -8,10 +8,10 @@ image: '/ollie_river.jpeg'
 
 
 
-<div class="ml-4 absolute top-10">
-  <span class="font-700">
+<div class="ml-4 absolute top-10" > 
+<span class="font-700">
     by Roni 💙
-  </span>
+ </span>
 </div>
 
 <div class="bg absolute bottom-10 ml-4">
@@ -34,14 +34,15 @@ image: '/ollie_river.jpeg'
 ---
 transition: fade-out
 layout: two-cols
+preload: false
 ---
 
-<template v-slot:default>
+
 
 # Tonights Agenda!
 
- <div class="w-60 relative mt-6">
-  <div class="relative w-40 h-40">
+ <div class="w-60 -ml-12 relative mt-6">
+  <div class="relative w-40 h-40" >
     <!-- 
      -->
     <img
@@ -54,7 +55,7 @@ layout: two-cols
  
 
   <div
-    class="text-3xl absolute top-14 left-40 text-[#2B90B6] -z-1"
+    class="text-4xl font-bold absolute w-40 top-20 left-40 text-[#2B90B6] -z-1"
     v-click
     :initial="{ x: -80, opacity: 0}"
     :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
@@ -62,7 +63,7 @@ layout: two-cols
   </div>
    </div>
 </div>
-<div class="w-72 relative mt-6">
+<div class="w-60 -ml-12 relative mt-6">
   <div class="relative w-40 h-40">
     <!-- -->
     <img
@@ -75,7 +76,7 @@ layout: two-cols
  
 
   <div
-    class="text-3xl absolute top-14 left-40 text-[#2B90B6] -z-1"
+    class="text-4xl font-bold absolute w-100 top-20 left-40 text-[#2B90B6] -z-1"
     v-click
     :initial="{ x: -80, opacity: 0}"
     :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
@@ -83,9 +84,9 @@ layout: two-cols
   </div>
    </div>
 </div>
-</template>
+
 <template v-slot:right>
-<div class="w-72 relative mt-16">
+<div class="w-72 -ml-12 relative mt-16">
   <div class="relative w-40 h-40">
     <!-- -->
     <img
@@ -97,7 +98,7 @@ layout: two-cols
     />
  
   <div
-    class="text-3xl absolute top-14 left-40 text-[#2B90B6] -z-1"
+    class="text-4xl font-bold absolute w-100 top-20 left-40 text-[#2B90B6] -z-1"
     v-click
     :initial="{ x: -80, opacity: 0}"
     :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
@@ -106,7 +107,7 @@ layout: two-cols
    </div>
 
 </div>
-<div class="w-72 relative mt-6">
+<div class="w-72 -ml-12 relative mt-6">
   <div class="relative w-40 h-40">
     <!-- -->
     <img
@@ -119,7 +120,7 @@ layout: two-cols
   </div>
 
   <div
-    class="text-3xl absolute top-14 left-40 text-[#2B90B6] -z-1"
+    class="text-4xl font-bold absolute w-60 top-20 left-40 text-[#2B90B6] -z-1"
     v-click
     :initial="{ x: -80, opacity: 0}"
     :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
@@ -164,20 +165,38 @@ Here is another comment.
 -->
 
 ---
-transition: fade-out
+transition: slide-left
 ---
 
 # About Me
 
 <div grid='~ cols-2 gap-4'>
 <div>
-I am a self-taught frontend developer. I worked with horses for the first few adult years. 2019 I started my journey into tech with online course, after I was hooked I went down the rabbit hole of tutorials. Currently working at Postman as a Software Engineer. Working with the marketing and open technologies teams to build features, component and pages.<br/>
-
+I am:
+<ul> 
+<li>a self-taught frontend developer</li>
+<li> worked with horses </li> 
+<li>2019 I started my journey into tech</li> 
+<li>Currently at Postman as a Software Engineer
+<li>Marketing and Open Technologies Teams to build features, component and pages</li> </li> 
+</ul>
 <img src="/assets/smile.png" class="contain w-1/2" alt="Roni and Ollie, dog, smiling wide">
 </div>
 <div>
-I live in Fort Collins, Colorado with my pup Ollie! We love to hike, bike and paddle board. And also hang out on patios at our favorite breweries so Ollie can meet all the people! He is also the best at helping me debug!!🐶
-<img src="/assets/ollielikes.jpeg" class="cover w-1/2 " alt="Ollie,dog, looking at camera with a heart icon over his head">
+<ul>
+<li>in Fort Collins, Colorado</li>
+<li> my pup Ollie, best rubber ducky there is!</li> 
+</ul>
+We love to 
+<ul grid='~ cols-2'>
+<li>hike</li> 
+<li>bike</li> 
+<li>paddle board</li>
+<li>Camp</li> 
+<li> Patio hangs at our favorite breweries</li>
+<li>Ollie's loves to do anything to meet all the people!</li>
+</ul>
+<img src="/assets/olliecute_sticker.png" class="cover  w-1/2 m-auto" alt="Ollie,dog, looking at camera with a heart icon over his head">
 </div>
 </div>
 <!--I needed to find something else,  when your body doesn't recover as fast and you are always working pay check to pay check. What made me jump into tech was after a few years working in customer service jobs but never able to give the customer the service I felt they needed through the ecommerce side of things. 
@@ -196,30 +215,34 @@ h1 {
 </style>
 
 ---
-transition: fade-out
+transition: slide-up
 ---
 
 # What is CMS?
 
 ## Content Management System
-Most people know of <strong>Wordpress</strong>. Which is a On-premises installation means that the CMS software can be installed on the server. 
-A monolithic system that was designed for blogs. Around 41% of the websites using Wordpress.
-Why not stick with it?
-### IMO
-- not a CMS by todays website usages
-- not secure
-- slow
-- big
-- Always need to update plugins
-- not great SEO, have to work at it
+Content Management System (CMS) enables users to build, organize, deliver, and modify content. With 2 types of installation: on-premises and cloud-based.
+The core CMS features are: indexing, search and retrieval, format management, revision control, and management
+Most people know of <strong>Wordpress</strong>. Around 41% of the websites using Wordpress.
 
-<br>
+It is very user friendly and anyone can spin up a wordpress site in minutes with little experience. And customizing is not too much work with adding plugins.
+<div class=''>
+Is Wordpress worth it?(IMO - No!)
 
-Resource [Wiki](https://en.wikipedia.org/wiki/Content_management_system)
+<ul grid='~ cols-2  gap-2'>
+<li class='text-sm'>not easily customizable</li>
+<li class='text-sm'>not secure</li>
+<li class='text-sm'>big & slow</li>
+<li class='text-sm'>Always need to update plugins</li>
+<li class='text-sm'>not great SEO, have to work at it</li>
+</ul >
+</div >
 
+
+Resources<br/> [Wiki](https://en.wikipedia.org/wiki/Content_management_system)
+<br/>[other](https://www.netsolutions.com/insights/content-management-system/)
 <!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/guide/syntax#embedded-styles
+yes Wordpress can be customized with SEO and security but it will cost money and need experience
 -->
 
 <style>
@@ -239,12 +262,13 @@ Here is another comment.
 -->
 
 ---
-transition: slide-up
+transition: fade
 layout: image-right
 image: https://www.digitalsilk.com/wp-content/uploads/2020/09/headless-content-menagament-system.jpg
 ---
 
-# What is HEADLESS CMS??!!
+## What is 
+# HEADLESS CMS??!!
 
 <p>Headless CMS is a content management system (CMS) without a pre-built front-end presentation layer or templating system; instead, it provides a content repository and an API** for managing the content.</p>
 
@@ -253,7 +277,7 @@ image: https://www.digitalsilk.com/wp-content/uploads/2020/09/headless-content-m
 2 main types of Headless CMS
 - API Driven(83)
 - Git-based(20)
-According to Jamstack.org
+<br/>**According to Jamstack.org
 
 <!-- you can probably guess which is more popular in the new API-first world. -->
 
@@ -295,7 +319,7 @@ a {
 
 
 ---
-transition: fade-out
+transition: slide-right
 layout: two-cols
 ---
 
@@ -365,11 +389,11 @@ And of course I use Netlify to host for a few reasons. Ease, security, cost 💰
 The best part of <strong>Jamstack</strong> tech is they are pretty friendly and can work in many different combonations!
 
 ---
-transition: fade
+transition: slide-down
 ---
+# Steps TBD
 # Demo Time 
 
-# Steps TBD
 
 1. Login/Create Sanity account.
 2. Create project - Name it My Plants
@@ -383,7 +407,7 @@ transition: fade
 ```
 
 ---
-transition: slide-down
+transition: fade-out
 class: text-center
 ---
 
