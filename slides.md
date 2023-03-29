@@ -196,9 +196,10 @@ We love to
 <li> Patio hangs at our favorite breweries</li>
 <li>Ollie's loves to do anything to meet all the people!</li>
 </ul>
-<img src="/assets/olliecute_sticker.png" class="cover  w-1/2 m-auto" alt="Ollie,dog, looking at camera with a heart icon over his head">
+<img src="/assets/olliecute_sticker.png" class="cover  w-1/2 m-auto" alt="Ollie,dog, looking at camera">
 </div>
 </div>
+
 <!--I needed to find something else,  when your body doesn't recover as fast and you are always working pay check to pay check. What made me jump into tech was after a few years working in customer service jobs but never able to give the customer the service I felt they needed through the ecommerce side of things. 
 I started looking around for a more flexible career path and have always gotten along with computers and curious about websites. Found a tiny bootcamp/workshop course and found I loved frontend. And here we are.-->
 
@@ -353,6 +354,25 @@ layout: two-cols
 </div>
 </div>
 </div>
+
+<style>
+  .slidev-layout h1 + p {
+   opacity: 1;
+  }
+h1 {
+  background-color:  #05386b;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+a {
+  font-size: 12px;
+}
+</style>
+
 ---
 transition: fade-out
 ---
@@ -388,6 +408,24 @@ And of course I use Netlify to host for a few reasons. Ease, security, cost 💰
 <br/>
 The best part of <strong>Jamstack</strong> tech is they are pretty friendly and can work in many different combonations!
 
+<style>
+  .slidev-layout h1 + p {
+   opacity: 1;
+  }
+h1 {
+  background-color:  #05386b;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+a {
+  font-size: 12px;
+}
+</style>
+
 ---
 transition: slide-down
 ---
@@ -407,9 +445,32 @@ transition: slide-down
 ```
 
 ---
+layout: image
+image: '/ollie_river.jpeg'
 transition: fade-out
-class: text-center
+class: text-right
 ---
+<div class="bg"> 
 
-Thank you!<br/>
-Be sure to check out Strapi and TinaCMS for some variety!
+## Thank you!
+
+<br/>
+<p>Be sure to check out Strapi and TinaCMS for some variety!</p>
+<p>Would love to see what projects you create with Headless CMS. I am always willing to help!</p>
+</div>
+
+<style>
+.bg{
+  width: 50%;
+  margin-left: 30rem;
+  background-color:  #05386b;
+  text-align: center;
+  padding: 1rem;
+}
+p {
+  
+ width: 95%;
+ /* margin-left: 5rem; */
+}
+
+</style>
