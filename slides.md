@@ -16,7 +16,7 @@ image: '/ollie_river.jpeg'
 
 <div class="bg absolute bottom-10 ml-4">
   <h1>Why I use Headless CMS</h1>
-  <p >Presentation/demo of how to use CMS</p>
+  <p>A demo of how Gatsby & Sanity well work together.</p>
 </div>
 
 <style>
@@ -175,32 +175,38 @@ transition: slide-left
 I am:
 <ul> 
 <li>a self-taught frontend developer</li>
-<li> worked with horses </li> 
 <li>2019 I started my journey into tech</li> 
-<li>Currently at Postman as a Software Engineer
-<li>Marketing and Open Technologies Teams to build features, component and pages</li> </li> 
+<li>Currently at Postman as a Software Engineer</li> 
 </ul>
+<br/>
+<br/>
+<br/>
 <img src="/assets/smile.png" class="contain w-1/2" alt="Roni and Ollie, dog, smiling wide">
 </div>
 <div>
 <ul>
+<br/>
+
 <li>in Fort Collins, Colorado</li>
 <li> my pup Ollie, best rubber ducky there is!</li> 
 </ul>
-We love to 
-<ul grid='~ cols-2'>
-<li>hike</li> 
-<li>bike</li> 
-<li>paddle board</li>
-<li>Camp</li> 
-<li> Patio hangs at our favorite breweries</li>
-<li>Ollie's loves to do anything to meet all the people!</li>
-</ul>
-<img src="/assets/olliecute_sticker.png" class="cover  w-1/2 m-auto" alt="Ollie,dog, looking at camera">
+<br/>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<div class='flex'>
+  <img src="/assets/olliescowl.png" class="cover  w-1/2 m-auto" alt="Ollie, dog, scowling at camera">
+  <img src="/assets/olliecute_sticker.png" class="cover  w-1/2 m-auto" alt="Ollie,dog, looking at camera">
+</div>
 </div>
 </div>
 
 <!--I needed to find something else,  when your body doesn't recover as fast and you are always working pay check to pay check. What made me jump into tech was after a few years working in customer service jobs but never able to give the customer the service I felt they needed through the ecommerce side of things. 
+Marketing and Open Technologies Teams to build features, component and pages
 I started looking around for a more flexible career path and have always gotten along with computers and curious about websites. Found a tiny bootcamp/workshop course and found I loved frontend. And here we are.-->
 
 <style>
@@ -222,28 +228,33 @@ transition: slide-up
 # What is CMS?
 
 ## Content Management System
-Content Management System (CMS) enables users to build, organize, deliver, and modify content. With 2 types of installation: on-premises and cloud-based.
-The core CMS features are: indexing, search and retrieval, format management, revision control, and management
-Most people know of <strong>Wordpress</strong>. Around 41% of the websites using Wordpress.
-
-It is very user friendly and anyone can spin up a wordpress site in minutes with little experience. And customizing is not too much work with adding plugins.
-<div class=''>
-Is Wordpress worth it?(IMO - No!)
-
-<ul grid='~ cols-2  gap-2'>
-<li class='text-sm'>not easily customizable</li>
-<li class='text-sm'>not secure</li>
-<li class='text-sm'>big & slow</li>
-<li class='text-sm'>Always need to update plugins</li>
-<li class='text-sm'>not great SEO, have to work at it</li>
-</ul >
-</div >
+Content Management System (CMS) enables users to build, organize, deliver, and modify content.
+<ul grid='~ cols-2  gap-2'> 
+<li>Coding knowledge not needed</li>
+<li>Easy to setup</li>
+<li>Tons of Extensions/Plugins</li>
+<li>Low price point</li>
+</ul>
+<br/>
+Most people know of <strong>Wordpress</strong>, usage is around 41% of the websites.
+<br/>
 
 
-Resources<br/> [Wiki](https://en.wikipedia.org/wiki/Content_management_system)
-<br/>[other](https://www.netsolutions.com/insights/content-management-system/)
+Is Wordpress worth it? 
+ <!-- <img src="/assets/olliecute_sticker.png"  class="cover w-1/2 ml-24" alt="Ollie,dog, looking at camera"> -->
+
+
+
+
 <!--
 yes Wordpress can be customized with SEO and security but it will cost money and need experience
+
+not easily customizable
+not secure
+big & slow
+Always need to update plugins
+not great SEO, have to work at it
+
 -->
 
 <style>
@@ -257,10 +268,6 @@ h1 {
   -moz-text-fill-color: transparent;
 }
 </style>
-
-<!--
-Here is another comment.
--->
 
 ---
 transition: fade
@@ -284,18 +291,7 @@ image: https://www.digitalsilk.com/wp-content/uploads/2020/09/headless-content-m
 
 <div grid="~ cols-2 gap-4">
 
-referenced resources: <br/>
-[Wiki](https://en.wikipedia.org/wiki/Headless_content_management_system)<br/>
-[image source](https://www.digitalsilk.com/digital-trends/headless-cms/)<br/>
-[Netlify article](https://www.netlify.com/blog/complete-guide-to-headless-cms/) <br/>
-[Sanity Blog](https://www.sanity.io/headless-cms)<br/>
 
-
-
-more: <br/>
-[A very long list of Headless CMS](https://jamstack.org/headless-cms/)<br/>
-[The Headless Club](https://theheadlessclub.com/)<br/>
-[Sanity Video](https://www.netlify.com/blog/complete-guide-to-headless-cms/)
 
 
 </div>
@@ -379,34 +375,31 @@ transition: fade-out
 
 # My go to stack
 
-<div grid="~ cols-2 gap-24">
+<div grid="~ cols-3 gap-24">
 <div>
-My favorite frontend framework. For me it is easy to understand and work relatively smoothly. Also, I learned about this framework at one of these WWWC talks!! <br/>Shoutout Jordan!!
 <br/>
 <br/>
-<br/>
-<img src="https://dka575ofm4ao0.cloudfront.net/pages-transactional_logos/retina/90147/Gatsby_Logo.png">
-
+<img class='w-3/5' src="https://dka575ofm4ao0.cloudfront.net/pages-transactional_logos/retina/90147/Gatsby_Logo.png" alt="Gatsby.js logo">
+<br/>🗣️ Shoutout Jordan!!
 </div>
 <div>
-Sanity is a great way to learn CMS and they have nice sweatshirts! I chose for its price point of 3 free users. 
-As an API driven CMS this one is well liked and has many tutorials. The docs are a little wonky right now since they have a new version. But they have slack channel that is active.
-<!-- It is a little pricey if you need more.  I am hoping by then I will be more of an agency dev -->
 <br/>
 <br/>
 <br/>
-<img src="https://cdn.sanity.io/images/3do82whm/next/51af00784c5addcf63ae7f0c416756acca7e63ac-353x71.svg?w=2000&fm=png&dl=sanity-logo.png">
+<img class='w-3/5' src="https://cdn.sanity.io/images/3do82whm/next/51af00784c5addcf63ae7f0c416756acca7e63ac-353x71.svg?w=2000&fm=png&dl=sanity-logo.png" alt="Sanity.io logo">
+
+</div>
+<div>
+<img class='' src="https://cdn.sanity.io/images/o0o2tn5x/production/853f17bcb1c0c264dab052006ef61fcf2893987f-1200x675.gif?" alt='Netlify logo Gif'>
 
 </div>
 </div>
 <br/>
-And of course I use Netlify to host for a few reasons. Ease, security, cost 💰. The main one is the free forms that come with all plans.
 <br/>
 <br/>
-
 <br/>
-<br/>
-The best part of <strong>Jamstack</strong> tech is they are pretty friendly and can work in many different combonations!
+These technologies are apart of the Jamstack community.
+The best part of Jamstack tech is they are pretty friendly and can work in many different combonations!
 
 <style>
   .slidev-layout h1 + p {
@@ -425,6 +418,14 @@ a {
   font-size: 12px;
 }
 </style>
+
+
+<!--Sanity is a great way to learn CMS and they have nice sweatshirts! I chose for its price point of 3 free users. 
+As an API driven CMS this one is well liked and has many tutorials. The docs are a little wonky right now since they have a new version. But they have slack channel that is active.Sanity is a great way to learn CMS and they have nice sweatshirts! I chose for its price point of 3 free users. 
+As an API driven CMS this one is well liked and has many tutorials. The docs are a little wonky right now since they have a new version. But they have slack channel that is active. It is a little pricey if you need more.  I am hoping by then I will be more of an agency dev
+And of course I use Netlify to host for a few reasons. Ease, security, cost 💰. The main one is the free forms that come with all plans. 
+Jamstack is It enables a composable architecture for the web where custom logic and 3rd party services are consumed through APIs.
+-->
 
 ---
 transition: slide-down
@@ -474,3 +475,27 @@ p {
 }
 
 </style>
+
+---
+transition: fade-out
+---
+## Resources
+<br/> 
+
+[Wiki Definition](https://en.wikipedia.org/wiki/Content_management_system)
+
+[another definition](https://www.netsolutions.com/insights/content-management-system/)
+
+[Wiki Headless Definition](https://en.wikipedia.org/wiki/Headless_content_management_system)
+
+[Netlify Guide article](https://www.netlify.com/blog/complete-guide-to-headless-cms/) <br/>
+
+[Sanity blog about headless](https://www.sanity.io/headless-cms)<br/>
+
+[An interactive list of Headless CMS](https://jamstack.org/headless-cms/)<br/>
+
+[The Headless Club](https://theheadlessclub.com/)<br/>
+
+[Sanity Video](https://www.netlify.com/blog/complete-guide-to-headless-cms/)
+
+[image source](https://www.digitalsilk.com/digital-trends/headless-cms/)<br/>
