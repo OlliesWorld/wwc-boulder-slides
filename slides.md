@@ -272,7 +272,7 @@ h1 {
 ---
 transition: fade
 layout: image-right
-image: "/assets/robot.png"
+image: "/robot.png"
 ---
 
 ## What is 
