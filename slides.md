@@ -15,7 +15,7 @@ image: '/ollie_river.jpeg'
 </div>
 
 <div class="bg absolute bottom-10 ml-4">
-  <h1>Why I use Headless CMS</h1>
+  <h1>Let's create a Headless CMS app</h1>
   <p>A demo of how Gatsby & Sanity well work together.</p>
 </div>
 
@@ -272,14 +272,14 @@ h1 {
 ---
 transition: fade
 layout: image-right
-image: https://www.digitalsilk.com/wp-content/uploads/2020/09/headless-content-menagament-system.jpg
+image: "/assets/robot.png"
 ---
 
 ## What is 
 # HEADLESS CMS??!!
 
-<p>Headless CMS is a content management system (CMS) without a pre-built front-end presentation layer or templating system; instead, it provides a content repository and an API** for managing the content.</p>
-
+<p>Headless CMS is a content management system (CMS) without a pre-built front-end presentation layer or templating system</p>
+<p>In the world today there are so many types and sizes of screens. You can have the same content and display with different frontend technology.</p>
 <!-- Basically, plugin and play with different sources, CDN, databases and much more. -->
 
 2 main types of Headless CMS
@@ -380,7 +380,7 @@ transition: fade-out
 <br/>
 <br/>
 <img class='w-3/5' src="https://dka575ofm4ao0.cloudfront.net/pages-transactional_logos/retina/90147/Gatsby_Logo.png" alt="Gatsby.js logo">
-<br/>🗣️ Shoutout Jordan!!
+
 </div>
 <div>
 <br/>
@@ -398,8 +398,7 @@ transition: fade-out
 <br/>
 <br/>
 <br/>
-These technologies are apart of the Jamstack community.
-The best part of Jamstack tech is they are pretty friendly and can work in many different combonations!
+<br/>🗣️ Shoutout Jordan!!
 
 <style>
   .slidev-layout h1 + p {
@@ -430,20 +429,20 @@ Jamstack is It enables a composable architecture for the web where custom logic 
 ---
 transition: slide-down
 ---
-# Steps TBD
-# Demo Time 
+# Steps 
+### Frontend First!
+<br/>
 
+1. Create your Gatsby repo 
+2. Get your layout with data placed
+3. install <strong>gatsby-source-sanity</strong>
+4. Login/Create Sanity account.
+5. Create project- either use Sanity template or clone this repo
+6. get project ID & add to Gatsby config(don't forget)
+7. Add data to Sanity
+8. Depoy Sanity and GraphQL
+9. Pull in data to Gatsby side
 
-1. Login/Create Sanity account.
-2. Create project - Name it My Plants
-3. get project ID
-4. [Clone this repo](https://motion.vueuse.org/).
-5. npm install
-6. Open in IDE
-
-```html
-<div v-motion :initial="{ x: -80 }" :enter="{ x: 0 }">Slidev</div>
-```
 
 ---
 layout: image
