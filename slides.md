@@ -18,7 +18,9 @@ image: '/ollie_river.jpeg'
   <h1>Let's create a Headless CMS app</h1>
   <p>A demo of how Gatsby & Sanity well work together.</p>
 </div>
-
+<!-- Hi friends, thank you for coming to this event. I am hoping this is helpful for anyone interested in learning more about HeadlessCMS. I will show you 1 expample of how I use Sanity and Gatsby together. There is so many ways to use Sanity and/or HeadlessCMS 
+If you have any questions please ask, I want this to be a conversation and hear your thoughts/ideas.
+Let's get started. -->
 <style>
   .bg {
     background-color:  #05386b;
@@ -128,7 +130,8 @@ preload: false
   </div>
 </div>
 </template>
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
+<!-- Just giving you a heads up of what the plan is for tonight. A little bit about me. What is CMS? a brief description and examples. And then find out what is this Headless business. And finally a little demo where I show you some code. What we live for the code.
+ -->
 <script setup lang="ts">
 const final = {
   x: 0,
@@ -205,9 +208,6 @@ I am:
 </div>
 </div>
 
-<!--I needed to find something else,  when your body doesn't recover as fast and you are always working pay check to pay check. What made me jump into tech was after a few years working in customer service jobs but never able to give the customer the service I felt they needed through the ecommerce side of things. 
-Marketing and Open Technologies Teams to build features, component and pages
-I started looking around for a more flexible career path and have always gotten along with computers and curious about websites. Found a tiny bootcamp/workshop course and found I loved frontend. And here we are.-->
 
 <style>
 h1 {
@@ -220,6 +220,14 @@ h1 {
   -moz-text-fill-color: transparent;
 }
 </style>
+
+
+<!--I needed to find something else,  when your body doesn't recover as fast and you are always working pay check to pay check. What made me jump into tech was after a few years working in customer service jobs but never able to give the customer the service I felt they needed through the ecommerce side of things. 
+
+I started looking around for a more flexible career path and have always gotten along with computers and curious about websites. Found a tiny bootcamp/workshop course and found I loved frontend. And here we are.
+At postman I get to do many things with many people. Mostly with Marketing and Open Technologies Teams to build features, component and pages.
+Don't ask about Ollie or I will bore you with all things. He is a very special guy.
+-->
 
 ---
 transition: slide-up
@@ -236,26 +244,13 @@ Content Management System (CMS) enables users to build, organize, deliver, and m
 <li>Low price point</li>
 </ul>
 <br/>
-Most people know of <strong>Wordpress</strong>, usage is around 41% of the websites.
-<br/>
+Most people know of <strong>Wordpress</strong>, <br>
+usage is around <strong>41%</strong> of the websites.
+<br>
+<br>
 
+Is Wordpress worth it? 🤔
 
-Is Wordpress worth it? 
- <!-- <img src="/assets/olliecute_sticker.png"  class="cover w-1/2 ml-24" alt="Ollie,dog, looking at camera"> -->
-
-
-
-
-<!--
-yes Wordpress can be customized with SEO and security but it will cost money and need experience
-
-not easily customizable
-not secure
-big & slow
-Always need to update plugins
-not great SEO, have to work at it
-
--->
 
 <style>
 h1 {
@@ -269,6 +264,21 @@ h1 {
 }
 </style>
 
+<!--
+NO!
+ALWAYS updating plugins, Always!!
+yes Wordpress can be customized with SEO and security but it will cost money and need experience
+
+not easily customizable for non-coders(even coders)
+not secure
+big & slow
+Always need to update plugins
+not great SEO, have to work at it
+
+And as you see not as adaptable
+-->
+
+
 ---
 transition: fade
 layout: image-right
@@ -280,14 +290,14 @@ image: "/robot.png"
 
 <p>Headless CMS is a content management system (CMS) without a pre-built front-end presentation layer or templating system</p>
 <p>In the world today there are so many types and sizes of screens. You can have the same content and display with different frontend technology.</p>
-<!-- Basically, plugin and play with different sources, CDN, databases and much more. -->
+
 
 2 main types of Headless CMS
 - API Driven(83)
 - Git-based(20)
 <br/>**According to Jamstack.org
 
-<!-- you can probably guess which is more popular in the new API-first world. -->
+
 
 <div grid="~ cols-2 gap-4">
 
@@ -314,6 +324,11 @@ a {
 }
 </style>
 
+<!--Headless is a mis-nomer. Multiple Adaptable Heads is probably better description but really weird name. Basically, plugin and play with different sources, CDN, databases and much more. 
+Especially now a days with soo many screensizes and usage we need scalability but with flexibility.
+
+ you can probably guess which is more popular in the new API-first world.
+ -->
 
 ---
 transition: slide-right
@@ -369,6 +384,9 @@ a {
 }
 </style>
 
+<!-- Pretty much read whats here
+Really neat projects are using HeadlessCMS -->
+
 ---
 transition: fade-out
 ---
@@ -420,9 +438,10 @@ a {
 
 
 <!--Sanity is a great way to learn CMS and they have nice sweatshirts! I chose for its price point of 3 free users. 
-As an API driven CMS this one is well liked and has many tutorials. The docs are a little wonky right now since they have a new version. But they have slack channel that is active.Sanity is a great way to learn CMS and they have nice sweatshirts! I chose for its price point of 3 free users. 
+As an API driven CMS this one is well liked and has many tutorials. The docs are a little wonky right now since they have a new version. But they have slack channel that is active.
+
 As an API driven CMS this one is well liked and has many tutorials. The docs are a little wonky right now since they have a new version. But they have slack channel that is active. It is a little pricey if you need more.  I am hoping by then I will be more of an agency dev
-And of course I use Netlify to host for a few reasons. Ease, security, cost 💰. The main one is the free forms that come with all plans. 
+And of course I use Netlify to host for a few reasons. Ease, security, cost 💰. A main one is the free forms that come with all plans. 
 Jamstack is It enables a composable architecture for the web where custom logic and 3rd party services are consumed through APIs.
 -->
 
@@ -476,9 +495,14 @@ layout: two-cols
 ```
 <br>
 
+<!-- depending on time talk about steps or just go quickly
+I like to start with Frontend first as I usually don't have an exact plan of what I want on the page or what it will look like.
+I use dummy data to create the basic structure and then start my studio -->
+
 ---
 transition: slide-up
 layout: two-cols
+monaco: true # default "dev"
 ---
 
 
@@ -512,6 +536,7 @@ export default defineType({
 ```
 
 <!--
+Make sure to redeploy Sanity and Graphql if you make changes on the studio
 This where can edit schema in slide if want to explain more
 defineField({
         name: 'title',
