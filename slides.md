@@ -1,7 +1,7 @@
 ---
 # try also 'default' to start simple
 theme: default
-
+monaco: true 
 layout: image
 image: '/ollie_river.jpeg'
 ---
@@ -18,9 +18,7 @@ image: '/ollie_river.jpeg'
   <h1>Let's create a Headless CMS app</h1>
   <p>A demo of how Gatsby & Sanity well work together.</p>
 </div>
-<!-- Hi friends, thank you for coming to this event. I am hoping this is helpful for anyone interested in learning more about HeadlessCMS. I will show you 1 expample of how I use Sanity and Gatsby together. There is so many ways to use Sanity and/or HeadlessCMS 
-If you have any questions please ask, I want this to be a conversation and hear your thoughts/ideas.
-Let's get started. -->
+
 <style>
   .bg {
     background-color:  #05386b;
@@ -32,6 +30,9 @@ Let's get started. -->
   }
 </style>
  
+ <!-- Hi friends, thank you for coming to this event. I am hoping this is helpful for anyone interested in learning more about HeadlessCMS. I will show you 1 expample of how I use Sanity and Gatsby together. There is so many ways to use Sanity and/or HeadlessCMS 
+If you have any questions please ask, I want this to be a conversation and hear your thoughts/ideas.
+Let's get started. -->
 
 ---
 transition: fade-out
@@ -502,7 +503,7 @@ I use dummy data to create the basic structure and then start my studio -->
 ---
 transition: slide-up
 layout: two-cols
-monaco: true # default "dev"
+monaco: true 
 ---
 
 
