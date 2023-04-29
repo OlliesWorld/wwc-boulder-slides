@@ -428,21 +428,97 @@ Jamstack is It enables a composable architecture for the web where custom logic 
 
 ---
 transition: slide-down
+layout: two-cols
 ---
-# Steps 
-### Frontend First!
-<br/>
+# Steps - Frontend First!
 
-1. Create your Gatsby repo 
-2. Get your layout with data placed
-3. install <strong>gatsby-source-sanity</strong>
-4. Login/Create Sanity account.
-5. Create project- either use Sanity template or clone this repo
-6. get project ID & add to Gatsby config(don't forget)
-7. Add data to Sanity
-8. Depoy Sanity and GraphQL
-9. Pull in data to Gatsby side
+### Frontend (Gatsby)
 
+- Create your Gatsby repo 
+- Get your layout with (dummy) data placed
+- Figure out what data you want in Sanity
+- install <strong>gatsby-source-sanity</strong>
+- get project ID & add to Gatsby config(don't forget)
+  - use an .env variable
+```js {4}
+  {
+      resolve: "gatsby-source-sanity",
+      options: {
+        projectId: process.env.SANITY_PROJECT_ID,
+        dataset: "production",
+      },
+    },
+```
+::right::
+### Using Sanity Data
+🔹 Once data is in Sanity and deployed<br>
+🔹 Open GraphQL and find your data<br>
+🔹 Create Query and copy into Page file<br>
+🔹 Use data on page<br>
+🔹 if using data inside a component, need static query<br>
+🔹 To dynamically create pages, add query to <em>gatsby-node.js</em>
+```graphql {maxHeight:'70px'}
+  {const queryResults = await graphql(`
+    query AllFlower {
+      allSanityFlower {
+        nodes {
+          _rawDescription
+          flowername
+          id
+          sciencename
+          slug {
+            current
+          }
+        }
+      }
+    }
+  `)
+```
+<br>
+
+---
+transition: slide-up
+layout: two-cols
+---
+
+
+### Backend (Sanity)
+
+- Login/Create Sanity account.
+- Create project
+- Download/Clone Sanity Repo
+- Create your schema file -->
+  - Look at Gatsby page  <br>
+  <br>
+- add schemas to `index`
+- Depoy Sanity and GraphQL
+- Once deployed can edit from browser or local
+
+::right::
+
+```js {monaco}
+export default defineType({
+    name: '',
+    type: '',
+    title: '',
+    fields: [    
+    defineField({
+        name: '',
+        title: '',
+        type: '',
+      }),
+    ]
+  })
+```
+
+<!--
+This where can edit schema in slide if want to explain more
+defineField({
+        name: 'title',
+        title: 'Title',
+        type: 'string',
+      }),
+-->
 
 ---
 layout: image
