@@ -450,62 +450,14 @@ Jamstack is It enables a composable architecture for the web where custom logic 
 transition: slide-down
 layout: two-cols
 ---
-# Steps - Frontend First!
+# My Steps
 
 ### Frontend (Gatsby)
 
 - Create your Gatsby repo 
 - Get your layout with (dummy) data placed
-- Figure out what data you want in Sanity
-- install <strong>gatsby-source-sanity</strong>
-- get project ID & add to Gatsby config(don't forget)
-  - use an .env variable
-```js {4}
-  {
-      resolve: "gatsby-source-sanity",
-      options: {
-        projectId: process.env.SANITY_PROJECT_ID,
-        dataset: "production",
-      },
-    },
-```
-::right::
-### Using Sanity Data
-🔹 Once data is in Sanity and deployed<br>
-🔹 Open GraphQL and find your data<br>
-🔹 Create Query and copy into Page file<br>
-🔹 Use data on page<br>
-🔹 if using data inside a component, need static query<br>
-🔹 To dynamically create pages, add query to <em>gatsby-node.js</em>
-```graphql {maxHeight:'70px'}
-  {const queryResults = await graphql(`
-    query AllFlower {
-      allSanityFlower {
-        nodes {
-          _rawDescription
-          flowername
-          id
-          sciencename
-          slug {
-            current
-          }
-        }
-      }
-    }
-  `)
-```
+- Figure out what data you want to come from Sanity
 <br>
-
-<!-- depending on time talk about steps or just go quickly
-I like to start with Frontend first as I usually don't have an exact plan of what I want on the page or what it will look like.
-I use dummy data to create the basic structure and then start my studio -->
-
----
-transition: slide-up
-layout: two-cols
-monaco: true 
----
-
 
 ### Backend (Sanity)
 
@@ -513,11 +465,9 @@ monaco: true
 - Create project
 - Download/Clone Sanity Repo
 - Create your schema file -->
-  - Look at Gatsby page  <br>
-  <br>
 - add schemas to `index`
 - Depoy Sanity and GraphQL
-- Once deployed can edit from browser or local
+- Once deployed can edit Studio in browser or local
 
 ::right::
 
@@ -536,6 +486,13 @@ export default defineType({
   })
 ```
 
+
+
+<!-- depending on time talk about steps or just go quickly
+I like to start with Frontend first as I usually don't have an exact plan of what I want on the page or what it will look like.
+I use dummy data to create the basic structure and then start my studio -->
+
+
 <!--
 Make sure to redeploy Sanity and Graphql if you make changes on the studio
 This where can edit schema in slide if want to explain more
@@ -546,6 +503,62 @@ defineField({
       }),
 -->
 
+
+---
+transition: slide-up
+layout: two-cols
+monaco: true 
+---
+
+### Using Sanity Data
+🔹 Once data is in Sanity and deployed<br>
+🔹 install <strong>gatsby-source-sanity</strong>
+🔹 get project ID & add to Gatsby config(don't forget)
+
+```js {4}
+  {
+      resolve: "gatsby-source-sanity",
+      options: {
+        projectId: process.env.SANITY_PROJECT_ID,
+        dataset: "production",
+      },
+    },
+```
+🔹 Open GraphQL and find your data<br>
+
+🔹 Create Query and copy into Page file<br>
+
+🔹 Use data on page<br>
+
+🔹 if using data inside a component, need static query<br>
+🔹 To dynamically create pages ** more steps required
+
+::right::
+```graphql 
+ export const query = graphql`
+  query flower {
+    allSanityFlower {
+      nodes {
+        id
+        flowername
+        slug {
+          current
+        }
+        mainImage {
+          asset {
+            altText
+            gatsbyImageData(
+              width: 500
+              placeholder: BLURRED
+              layout: CONSTRAINED
+            )
+          }
+        }
+      }
+    }
+  }
+`
+```
 ---
 layout: image
 image: '/ollie_river.jpeg'
