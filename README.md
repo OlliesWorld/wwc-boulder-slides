@@ -5,10 +5,7 @@ This project is a demo for a talk about headless CMS. Cards with flowers for pla
     
 ## Technologies used 
 Project is created with:<br/>
-Gatsby </br>
-Sanity </br>
-Styled-components </br>
-Netlify
+Slidev
 
 To start the slide show:
 
